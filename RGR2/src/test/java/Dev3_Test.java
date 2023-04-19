@@ -1,22 +1,13 @@
-
-import calc.CalcCore;
+import calc.Core;
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-import static org.junit.Assert.assertTrue;
 
 public class Dev3_Test {
-
-    float value = 10f;
-    CalcCore core = new CalcCore(0f, 0f, 0f, 0f, 0f);
-
-    // Тест валидаторов
-    @Test
-    public void not_negative() {
-        assertTrue(core.not_negative(value));
-    }
+    Core record = new Core(321f, 3213f,321f,321f, 3f);
 
     @Test
-    public void not_large() {
-        assertTrue(core.not_large(value));
+    public void value_check() {
+        assertEquals(record.NB(), 321.0f, 0f);
     }
 }

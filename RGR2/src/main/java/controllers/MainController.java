@@ -116,7 +116,7 @@ public class MainController {
             );
             CalcCore calc = new CalcCore(this.NB, this.NS, this.PV, this.PK, this.L);
             System.out.println(calc.get_values());
-            labelResult.setText(Float.toString(Math.round(calc.get_formula_value() * 10f) / 10f));
+            labelResult.setText(Float.toString(Math.round(calc.get_formula_value() * 10f) / 10f) + " руб.");
         } catch (NullPointerException e) {
             labelResult.setText("Нужно ввести значения!");
         } catch (IllegalArgumentException e) {

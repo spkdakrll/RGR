@@ -21,7 +21,8 @@ public class ListenerPDF {
         Hat[3] = "Льгота";
         Hat[4] = "Налог";
 
-        String text_hat = "     Налоговый калькулятор. Имущественный налог.\n                          Команда №2 ПИ-228Б";
+        String text_hat = "                 Налоговый калькулятор. Имущественный налог.\n         " +
+                "                                   Команда №2 ПИ-228Б";
         if (get_L() == 0.0){
             LText = "без участия в льготной программе";
         } else { LText = "участвуя в льготной программе"; }
@@ -31,15 +32,15 @@ public class ListenerPDF {
         String Namefile = "ResultTable.pdf";
         BaseFont times = null;
         try {
-            times = BaseFont.createFont(String.valueOf(getClass().getResource("/fonts/Montserrat-SemiBold.ttf")), "cp1251", BaseFont.EMBEDDED);
+            times = BaseFont.createFont(String.valueOf(getClass().getResource("/fonts/timesnewroman.ttf")), "cp1251", BaseFont.EMBEDDED);
         } catch (DocumentException e2) {
             e2.printStackTrace();
         } catch (IOException e2) {
             e2.printStackTrace();
         }
         String[][] name_cell = new String[1][5];
-        name_cell[0][0] = String.valueOf(get_NB() + "л.с.");
-        name_cell[0][1] = String.valueOf(get_PV() + "месяцев");
+        name_cell[0][0] = String.valueOf(get_NB() + " л.с.");
+        name_cell[0][1] = String.valueOf(get_PV() + " месяцев/налоговый год");
         name_cell[0][2] = String.valueOf(get_PK());
         if (get_L() == 0.0){
         name_cell[0][3] = String.valueOf("Отсутствует");}

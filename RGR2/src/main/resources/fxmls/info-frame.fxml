@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InfoController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="248.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InfoController">
    <children>
       <Label layoutX="135.0" layoutY="14.0" prefHeight="25.0" prefWidth="119.0" text="Информация">
          <font>
@@ -18,13 +18,15 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="110.0" layoutY="98.0" prefHeight="17.0" prefWidth="169.0" text="Шангареев Камиль Разитович" />
-      <Label layoutX="106.0" layoutY="135.0" text="Разработчик 2, разработчик 3">
+      <Label layoutX="112.0" layoutY="158.0" prefHeight="17.0" prefWidth="169.0" text="Шангареев Камиль Разитович" />
+      <Label layoutX="107.0" layoutY="142.0" text="Разработчик 2, разработчик 3">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="97.0" layoutY="158.0" prefHeight="17.0" prefWidth="195.0" text="Ларионов Кирилл Александрович" />
-      <Button fx:id="btnClose" layoutX="115.0" layoutY="195.0" mnemonicParsing="false" onMouseClicked="#actionClose" prefHeight="25.0" prefWidth="159.0" text="Закрыть" />
+      <Label layoutX="97.0" layoutY="92.0" prefHeight="17.0" prefWidth="195.0" text="Ларионов Кирилл Александрович" />
+      <Button fx:id="btnClose" layoutX="117.0" layoutY="213.0" mnemonicParsing="false" onMouseClicked="#actionClose" prefHeight="25.0" prefWidth="159.0" text="Закрыть" />
+      <Label layoutX="137.0" layoutY="109.0" prefHeight="17.0" prefWidth="119.0" text="Номер ЗК: 21130374" />
+      <Label layoutX="135.0" layoutY="175.0" prefHeight="17.0" prefWidth="119.0" text="Номер ЗК: 21130437" />
    </children>
 </AnchorPane>
