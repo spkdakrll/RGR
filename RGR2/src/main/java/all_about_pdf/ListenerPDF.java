@@ -26,7 +26,7 @@ public class ListenerPDF {
         if (get_L() == 0.0){
             LText = "без участия в льготной программе";
         } else { LText = "участвуя в льготной программе"; }
-        String text_general = "        Для автомобиля мощностью " + get_NB() + " л.с., периодом владения " + get_PV() + " месяцев, а также с учетом повышенного коэффициента " + get_PK() +", " + LText + ", необходимо заплатить налог в размере " + get_final_value() + " руб.";
+        String text_general = "        Для автомобиля мощностью " + get_NB() + " л.с., периодом владения " + get_PV() + " месяцев/налоговый год, а также с учетом повышенного коэффициента " + get_PK() +", " + LText + ", необходимо заплатить налог в размере " + get_final_value() + " руб.";
 
         URL Imagelink = getClass().getResource("/images/calculator.png");
         String Namefile = "ResultTable.pdf";
