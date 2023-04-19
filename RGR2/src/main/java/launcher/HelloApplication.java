@@ -14,6 +14,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 467, 563);
         stage.setTitle("Налоговый калькулятор. Калькулятор имущества");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 

@@ -133,9 +133,10 @@ public class MainController {
     @FXML
     public void actionInfo(ActionEvent event) throws IOException {
         FXMLLoader fxml_loader = new FXMLLoader(getClass().getResource("/fxmls/info-frame.fxml"));
-        Scene scene = new Scene(fxml_loader.load(), 388, 234);
+        Scene scene = new Scene(fxml_loader.load(), 388, 244);
         stage.setTitle("Информация о разработчиках");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
