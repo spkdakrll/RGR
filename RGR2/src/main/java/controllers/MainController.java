@@ -72,7 +72,7 @@ public class MainController {
             listenerPDF.set_final_value(Math.round(calc.get_formula_value() * 10f) / 10f);
             listenerPDF.createPDF();
         }catch (NullPointerException e){
-            labelResult.setText("Нужно ввести значения!");
+            labelResult.setText("Нужно сделать расчет!");
         }
     }
 
